@@ -27,28 +27,55 @@
     h1 {
       color: #4fc3f7;
     }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 8px;
-      border: none;
-    }
-    form input[type="submit"] {
-      background-color: #4fc3f7;
-      color: #000;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .whatsapp-link {
+    .telegram-link, .whatsapp-link, .pay-link {
       display: inline-block;
       margin-top: 20px;
-      background-color: #25D366;
-      color: #fff;
       padding: 12px 20px;
       border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
+    }
+    .whatsapp-link {
+      background-color: #25D366;
+      color: #fff;
+    }
+    .telegram-link {
+      background-color: #229ED9;
+      color: #fff;
+      margin-right: 10px;
+    }
+    .pay-link {
+      background-color: #ffc107;
+      color: #000;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    .guarantee {
+      background-color: #2a2f4a;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 30px;
+    }
+    .guarantee p {
+      margin: 10px 0;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .payment-box {
+      background-color: #1a1f35;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 30px;
+      color: #eee;
+    }
+    .payment-box p {
+      margin: 10px 0;
+    }
+    .payment-box code {
+      background-color: #333;
+      padding: 6px 10px;
+      border-radius: 6px;
+      display: inline-block;
     }
   </style>
 </head>
@@ -63,25 +90,34 @@
       مناسب لتطبيقات AI، روبوتات المحادثة، أدوات SaaS...
     </p>
     <h2>💸 السعر: 79 دولار فقط</h2>
-    <p>يشمل: نقل ملكية الدومين + شعار بجودة عالية + دعم فني بعد البيع.</p>
+    <p>
+      ✅ يشمل: 
+      <ul style="text-align: right; max-width: 500px; margin: 0 auto;">
+        <li>نقل ملكية الدومين</li>
+        <li>شعار بجودة عالية</li>
+        <li>دعم فني بعد البيع</li>
+        <li>📧 إنشاء بريد إلكتروني احترافي مخصص بالنطاق (مثل: info@ultraai.online)</li>
+      </ul>
+    </p>
     <p>⚠️ النطاق متاح حاليًا على GoDaddy وسيُشترى فور وجود مشتري جاد.</p>
 
-    <form action="https://formsubmit.co/y57330773@gmail.com" method="POST">
-      <label>اسمك الكامل:</label>
-      <input type="text" name="name" required>
+    <div class="guarantee">
+      <p>🛡️ <strong>ضمان الأمان:</strong> نحن نضمن لك استلام الخدمة كاملة أو استرجاع المبلغ.</p>
+      <p>✔️ سيتم تسليم الدومين، الشعار، والإيميل المخصص خلال أقل من 24 ساعة بعد الدفع.</p>
+    </div>
 
-      <label>بريدك الإلكتروني:</label>
-      <input type="email" name="email" required>
+    <a class="pay-link" onclick="document.getElementById('payment').scrollIntoView({ behavior: 'smooth' });">💰 إدفع من هنا</a>
 
-      <label>رسالتك:</label>
-      <textarea name="message" rows="4">أنا مهتم بشراء الدومين UltraAI.online</textarea>
+    <div class="payment-box" id="payment">
+      <h3>💳 طرق الدفع:</h3>
+      <p><strong>PayPal:</strong> <code>y57330773@gmail.com</code></p>
+      <p><strong>USDT (BEP20):</strong> <code>0xcb6512713fbbe54b3e000294af0c0b8755ae0c58</code></p>
+      <p>بعد الدفع، الرجاء إرسال لقطة شاشة (screenshot) لتأكيد الدفع إلى حسابي على واتساب أو تيليجرام أدناه 👇</p>
+    </div>
 
-      <input type="submit" value="إرسال">
-    </form>
-
-    <a class="whatsapp-link" href="https://wa.me/212721924217" target="_blank">
-      تواصل معنا على واتساب
-    </a>
+    <p>📩 للتواصل:</p>
+    <a class="telegram-link" href="https://t.me/Yassinetradin456" target="_blank">راسلنا على تيليجرام</a>
+    <a class="whatsapp-link" href="https://wa.me/212721924217" target="_blank">تواصل معنا على واتساب</a>
   </div>
 </body>
 </html>
